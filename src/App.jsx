@@ -20,7 +20,7 @@ function App() {
 
         <BrowserRouter>
           <Routes>
-            <Route path="loby" element={<LobyPlants />} />
+            <Route path="/" element={<LobyPlants />} />
             <Route path="planta/:idRender" element={<CardMain />} />
           </Routes>
         </BrowserRouter>
