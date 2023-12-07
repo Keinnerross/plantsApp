@@ -1,0 +1,36 @@
+.headerContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #08C08F;
+    color: white;
+}
+
+.headerSection {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoHeader {
+    width: 160px;
+    height: 40px;
+    background-image: url("../../src/assets/brand/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.circleLight {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+

@@ -1,0 +1,77 @@
+.circlesDataContainer {
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.circlesDataSection {
+    display: flex;
+    width: 80%;
+    gap: 20px;
+}
+
+.iconMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.iconContainer {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    background-color: #08C08F;
+    border-radius: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.iconDescription {
+    display: flex;
+    flex-direction: column;
+}
+.iconDescription h2{
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+.iconDescription span{
+    font-size: 12px;
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+.iconMain{
+    gap: 3px;
+}
+
+    .iconDescription h2 { 
+     
+font-size: 12px;
+    }
+
+
+    .iconDescription span { 
+     
+        font-size: 10px;
+            }
+
+            .circlesDataContainer{
+                width: 100%;
+            justify-content: center;
+            }
+
+            .circlesDataSection{
+                width: 100%;
+                justify-content: space-between;
+            }
+
+
+}

@@ -1,0 +1,18 @@
+.lobySection {
+    width: 80vw;
+    background-color: white;
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 9px;
+}
+
+.tableData{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableData th, .tableData td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left; 
+  }
