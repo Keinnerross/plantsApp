@@ -22,7 +22,7 @@ const LobyPlants = () => {
                                 <td>{data.nombre}</td>
                                 <td>{data.Origen}</td>
                                 <td>
-                                    <a href={`http://127.0.0.1:5173/planta/${i}`}>
+                                    <a href={`https://keinnerross.github.io/plantsApp/${i}`}>
                                         <button className="showPlantBtn">Ver</button>
                                     </a>
                                 </td>

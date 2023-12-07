@@ -1,3 +1,5 @@
+import ageratumImg from "../assets/Fotos_Plantas/ageratum.jpg"
+
 const dataPlants = [
     {
         nombre: "Ageratum",
@@ -7,7 +9,7 @@ const dataPlants = [
         Reproduccion: "Semillas",
         Simbolismo: "símbolo de la eterna juventud",
         riego: "Frecuente",
-        fotoURL: "https://www.gardendesign.com/pictures/images/900x705Max/site_3/blue-mink-floss-flower-ageratum-houstonianum-shutterstock-com_13700.jpg"
+        fotoURL: "../assets/Fotos_Plantas/ageratum.jpg"
     },
     {
         nombre: "Clavelon Inca",
@@ -72,8 +74,8 @@ const dataPlants = [
     {
         nombre: "Malamadre",
         Descripción: `la Cinta, también conocida como "Malamadre"! Con hojas verdes arqueadas, esta planta de interior irradia un encanto natural. Su resistencia y adaptabilidad la convierten en la elección perfecta para aquellos que buscan una compañera de bajo mantenimiento. Colócala en cualquier rincón y observa cómo transforma sutilmente tu espacio, añadiendo una dosis de frescura y serenidad. La Cinta, una expresión simple y hermosa de la naturaleza en tu hogar. `,
-        Origen: "Int",
-        Ubicación: "Sudafrica",
+        Origen: "Sudafrica",
+        Ubicación: "Int",
         Reproduccion: "hijuelos",
         Simbolismo: "unión y amor incondicional",
         riego: "2 veces x semana",
