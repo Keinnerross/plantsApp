@@ -13,15 +13,15 @@ import LobyPlants from './components/lobyPlants.jsx';
 
 const router = createHashRouter([
     {
-        path: "/plantsApp",
+        path: "/",
         element: <LobyPlants />
     },
     {
-        path: "/plantsApp/planta/:idRender",
+        path: "/planta/:idRender",
         element: <CardMain />
     },
     {
-        path: "/plantsApp/planta",
+        path: "/planta",
         element: <span>All ok </span>
     }
 ])
