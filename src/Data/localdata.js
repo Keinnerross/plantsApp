@@ -9,7 +9,7 @@ const dataPlants = [
         Reproduccion: "Semillas",
         Simbolismo: "símbolo de la eterna juventud",
         riego: "Frecuente",
-        fotoURL: "../assets/Fotos_Plantas/ageratum.jpg"
+        fotoURL: "https://www.gardendesign.com/pictures/images/900x705Max/site_3/blue-mink-floss-flower-ageratum-houstonianum-shutterstock-com_13700.jpg"
     },
     {
         nombre: "Clavelon Inca",

@@ -1,26 +1,51 @@
 import './App.css'
-import CardMain from './components/cardMain'
 import LobyPlants from './components/lobyPlants';
-import {Routes, Route } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom'
+import Header from "./components/template/header"
+import CardMain from './components/cardMain';
+import IdeaCard from './components/ideaCard';
+import { useState } from 'react';
+
+
+const router = createHashRouter([
+  {
+    path: "/",
+    element: <LobyPlants />
+  },
+  {
+    path: "/planta/:idRender",
+    element: <CardMain />
+  },
+  {
+    path: "/planta",
+    element: <span>All ok </span>
+  }
+])
+
+
 
 function App() {
 
 
+  const [isActiveIdea, setIsActiveIdea] = useState(false)
+
+
+  const handleActiveIdea = () => {
+    setIsActiveIdea(!isActiveIdea)
+  }
 
   return (
 
     <>
-      <div className="appMainContainer">
-
-        {/* <Routes>
-          <Route path="/plantsApp/" element={<LobyPlants />} />
-          <Route path="/plantsApp/planta/:idRender" element={<CardMain />} />
-          <Route path="/plantsApp/planta/" element={<span>All ok </span>} />
-        </Routes> */}
-      </div >
+      <Header handleActive={handleActiveIdea} />
+      <IdeaCard isActive={isActiveIdea} handleIdea={handleActiveIdea} />
+      <RouterProvider router={router}>
+      </RouterProvider>
     </>
 
   )
 }
 
 export default App
+
+

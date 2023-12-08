@@ -1,7 +1,7 @@
 import "../../../stylesheets/template/header.css"
 import { LuMenu } from "react-icons/lu";
 import { FaLightbulb } from "react-icons/fa6";
-const Header = () => {
+const Header = ({ handleActive }) => {
 
 
     const settingIcon = {
@@ -14,14 +14,14 @@ const Header = () => {
             <div className="headerSection">
 
                 <LuMenu size={settingIcon.size} />
-                <div className="logoHeader">
-                </div>
-                <div className="circleLight">
+                <a href="https://keinnerross.github.io/plantsApp/"><div className="logoHeader">
+                </div></a>
+                <div className="circleLight" onClick={() => handleActive()}>
                     <FaLightbulb size={18} color="#08C08F" />
                 </div>
             </div>
 
-        </div>
+        </div >
     )
 }
 
