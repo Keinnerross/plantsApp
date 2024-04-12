@@ -5,7 +5,7 @@ import Header from "./components/template/header"
 import CardMain from './components/cardMain';
 import IdeaCard from './components/ideaCard';
 import { useState } from 'react';
-
+import FooterControllers from "./components/template/FooterControllers"
 
 const router = createHashRouter([
   {
@@ -39,8 +39,12 @@ function App() {
     <>
       <Header handleActive={handleActiveIdea} />
       <IdeaCard isActive={isActiveIdea} handleIdea={handleActiveIdea} />
+
       <RouterProvider router={router}>
+
       </RouterProvider>
+      <FooterControllers />
+
     </>
 
   )

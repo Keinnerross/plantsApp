@@ -1,0 +1,96 @@
+.carePlantsContainer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    background-color: white;
+    animation: aparecer 0.5s ease-in-out;
+}
+
+.CareControllers {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    padding: 25px;
+}
+
+.CareControllers span {
+    font-size: 40px;
+    color: lightgray;
+    cursor: pointer;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.carePlantsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+}
+
+.carePlantsSection h2 {
+    text-align: center;
+}
+
+.imgContainer {
+    width: 80%;
+    border-radius: 50px;
+    margin-bottom: 50px;
+
+}
+
+.careButton {
+    position: absolute;
+    bottom: 10px;
+    width: 90%;
+    border-radius: 12px;
+    height: 60px;
+    color: white;
+    background-color: #0192FD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hidden {
+
+    display: none;
+}
+
+textarea {
+    width: 80%;
+    height: 150px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    resize: vertical;
+}
+
+textarea:focus {
+    border-color: #0192FD;
+    outline: none;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        /* Elemento invisible al inicio */
+    }
+
+    to {
+        opacity: 1;
+        /* Elemento completamente visible al final */
+    }
+}
